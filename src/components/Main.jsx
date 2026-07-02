@@ -120,10 +120,10 @@ const Main = () => {
       ) : (
         /* Search Input Bar & Live Dropdown Layout Wrapper - Active when search is false */
         <div className="relative">
-          <div className="flex bg-amber-100 w-[600px] h-16 justify-between items-center px-5 rounded-full transition-all duration-300 shadow-md hover:shadow-xl">
+          <div className="flex  max-w-5xl  h-16  items-center px-5 rounded-full transition-all duration-300 shadow-[0_0_200px_rgba(14,165,233,0.55)]  hover:-translate-y-0.5 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 " >
             <div className="flex items-center gap-5">
               {/* Search Icon Button */}
-              <div className="flex justify-center items-center w-10 h-10 rounded-full hover:bg-amber-200/60 cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95">
+              <div className="flex justify-center items-center w-10 h-10 rounded-full hover:bg-pink-300/60 cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95">
                 <img
                   src={assets.searchIcon}
                   alt=""

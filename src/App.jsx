@@ -86,7 +86,7 @@ const App = () => {
           </div>
 
           {/* Input Box */}
-          <div className="ml-30 mb-4">
+          <div className=" flex pb-4 justify-center w-full">
             <Main />
           </div>
 
