@@ -65,13 +65,12 @@ const Main = () => {
   };
 
   return (
-    <div className="flex flex-col w-full items-center gap-2 relative">
-      {search ? (
+    search ? (
         /* Regular Chat Input Bar - Active when search is true */
-        <div className="flex  max-w-600px h-16   lg:gap-28 items-center px-5 rounded-full transition-all duration-300 shadow-[0_0_200px_rgba(14,165,233,0.55)]  hover:-translate-y-0.5 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200  ">
+        <div className="flex  max-w-5xl h-16  lg:gap-28  items-center px-5 rounded-full transition-all duration-300 shadow-[0_0_200px_rgba(14,165,233,0.55)]  hover:-translate-y-0.5 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200  ">
           <div className="flex items-center gap-2 md:gap-3 lg:gap-5">
             {/* Plus Button - Added hover scale and smooth active pop */}
-            <div className="flex justify-center items-center w-10 h-10 rounded-full hover:bg-pink-300/60 cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95">
+            <div className="flex justify-center items-center w-13 h-10 rounded-full hover:bg-pink-300/60 cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95">
               <img
                 src={assets.plus_icon}
                 alt=""
@@ -82,7 +81,7 @@ const Main = () => {
               type="text"
               placeholder="Ask Gemini"
               value={input} 
-              className="outline-none w-[300px] bg-transparent placeholder-gray-500 text-gray-800"
+              className="outline-none w-full bg-transparent placeholder-gray-500 text-gray-800"
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && onSent()} 
             />
@@ -163,8 +162,8 @@ const Main = () => {
             </div>
           )}
         </div>
-      )}
-    </div>
+      )
+   
   );
 };
 

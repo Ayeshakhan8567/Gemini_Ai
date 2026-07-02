@@ -13,13 +13,13 @@ const App = () => {
   } = useContext(Context);
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen w-full ">
 
       <Sidebar />
 
       {showresult ? (
         // Welcome Screen
-        <div className="flex items-center justify-center ml-30">
+        <div className="flex items-center justify-center w-full">
           <Main />
         </div>
       ) : (
@@ -34,7 +34,7 @@ const App = () => {
               <div key={index} className="mb-8">
 
                 {/* User Prompt */}
-                <div className="flex items-center gap-3 mb-4 rounded-full hover:bg-pink-300/60 ">
+                <div className="flex items-center gap-3 mb-4 max-w-100 rounded-full bg-pink-300/60 ">
                   <img
                     src={assets.user_icon}
                     alt=""
